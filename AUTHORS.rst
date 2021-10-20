@@ -339,6 +339,7 @@ Randall Sharo                      andall.sharo@navy.mil
 Ravi Kerur                         Ravi.Kerur@telekom.com
 Raymond Burkholder                 ray@oneunified.net
 Reid Price
+Remi Jouannet                      remi.jouannet@outscale.com
 Remko Tronçon                      git@el-tramo.be
 Renat Nurgaliyev                   impleman@gmail.com
 Rich Lane                          rlane@bigswitch.com
@@ -369,6 +370,7 @@ Scott Cheloha                      scottcheloha@gmail.com
 Scott Lowe                         scott.lowe@scottlowe.org
 Scott Mann                         sdmnix@gmail.com
 Selvamuthukumar                    smkumar@merunetworks.com
+Sergey Madaminov                   sergey.madaminov@gmail.com
 Sha Zhang                          zhangsha.zhang@huawei.com
 Shad Ansari                        shad.ansari@hpe.com
 Shahar Klein                       sklein@nvidia.com
@@ -457,6 +459,7 @@ Zhenyu Gao                         sysugaozhenyu@gmail.com
 ZhiPeng Lu                         luzhipeng@uniudc.com
 Zhou Yangchao                      1028519445@qq.com
 aginwala                           amginwal@gmail.com
+lic121                             lic121@chinatelecom.cn
 lzhecheng                          lzhecheng@vmware.com
 parameswaran krishnamurthy         parkrish@gmail.com
 solomon                            liwei.solomon@gmail.com
