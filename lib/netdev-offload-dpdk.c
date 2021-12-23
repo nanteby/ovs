@@ -949,7 +949,8 @@ vport_to_rte_tunnel(struct netdev *vport,
             ds_put_format(s_tnl, "flow tunnel create %d type vxlan; ",
                           netdev_dpdk_get_port_id(netdev));
         }
-    } else if (!strcmp(netdev_get_type(vport), "gre")) {
+    } else if (!strcmp(netdev_get_type(vport), "gre") ||
+               !strcmp(netdev_get_type(vport), "ip6gre") ) {
         tunnel->type = RTE_FLOW_ITEM_TYPE_GRE;
         if (!VLOG_DROP_DBG(&rl)) {
             ds_put_format(s_tnl, "flow tunnel create %d type gre; ",
@@ -1202,7 +1203,8 @@ parse_flow_tnl_match(struct netdev *tnldev,
     if (!strcmp(netdev_get_type(tnldev), "vxlan")) {
         ret = parse_vxlan_match(patterns, match);
     }
-    else if (!strcmp(netdev_get_type(tnldev), "gre")) {
+    else if (!strcmp(netdev_get_type(tnldev), "gre") ||
+             !strcmp(netdev_get_type(tnldev), "ip6gre")) {
         ret = parse_gre_match(patterns, match);
     }
 
@@ -2339,7 +2341,8 @@ get_vport_netdev_cb(struct netdev *netdev,
     if (!aux->type || strcmp(netdev_get_type(netdev), aux->type)) {
         return false;
     }
-    if (!strcmp(netdev_get_type(netdev), "gre")) {
+    if (!strcmp(netdev_get_type(netdev), "gre") ||
+        !strcmp(netdev_get_type(netdev), "ip6gre")) {
         goto out;
     }
 
